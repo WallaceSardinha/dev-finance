@@ -1,0 +1,15 @@
+body {
+
+    place-content: center;
+    margin: auto;
+    justify-content: center;
+
+}
+
+header {
+
+    background-color: aquamarine;
+    width: 1000px;
+
+
+}
