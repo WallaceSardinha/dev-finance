@@ -1,15 +1,145 @@
+:root {
+    --dark-blue: #363f5f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
 
-    place-content: center;
-    margin: auto;
-    justify-content: center;
+    background-color: rgb(221, 255, 231);
+    font-family: 'Open Sans', sans-serif
 
+}
+
+.container {
+
+    width: min(90vw, 800px);
+    position: relative;
+
+    margin: auto;
+
+}
+
+h2 {
+    margin-top: 3.2rem;
+    margin-bottom: 0.8rem;
+    color: var(--dark-blue);
+
+    font-weight: 400;
 }
 
 header {
 
-    background-color: aquamarine;
-    width: 1000px;
+    background: rgb(52, 117, 46);
+    background-image: url(./images/money.png);
+    background-repeat: repeat;
+    background-size: 250px;
 
+    padding: 2rem 0 10rem;
+    text-align: center;
+
+}
+
+main {
+    display: block;
+}
+
+#monetary {
+
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    right: 50px;
+    top: -20px;
+
+}
+
+#logo {
+
+    color: #fff;
+    font-weight: 100;
+
+}
+
+#balance {
+
+    margin-top: -8rem;
+
+
+}
+
+#balance h2 {
+
+    color: white;
+    font-weight: 500;
+
+
+}
+
+.card {
+
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+
+    margin-bottom: 2rem;
+    color: var(--dark-blue);
+}
+
+.card h3 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+.card p {
+    font-size: 2rem;
+    line-height: 2rem;
+
+    padding: .8rem;
+}
+
+.card.green {
+    background: #1ba51b;
+    color: white;
+}
+
+#transaction {
+
+}
+
+
+#data-table {
+    width: 100%;
+    border-spacing: 0 .5rem;
+}
+
+table td {
+    text-align: left;
+    padding-left: 1rem;
+    background: white;
+    border-radius: 1px;
+    color: #6e7ba8bb;
+    font-weight: 500;
+
+}
+
+table th {
+    background-color: white;
+    border-radius: 3px;
+    color: #6e7ba8bb;
+    padding: 1rem 1rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 650;
+
+}
+
+footer {
+
+    text-align: center;
 
 }
