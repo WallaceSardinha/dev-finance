@@ -21,24 +21,35 @@
     <main class="container">
         
         <section id="balance">
-            <h2>Balanço</h2>
+            <h2 class="sr-only">Balanço</h2>
             
             <div class="card">
-                <H3>Entradas</H3>
+                <H3>
+                    <span>Entradas</span>
+                    <img src="./images/downgreen.png" alt="" id="downgreen">
+                </H3>
                 <p>R$ 5.000,00</p>
             </div>
             <div class="card">
-                <h3>Saidas</h3>
+                <H3>
+                    <span>Saidas</span>
+                    <img src="./images/downred.png" alt="" id="downred">
+                </H3>
                 <p>R$ 2.000,00</p>
             </div>
             <div class="card total">
-                <h3>Total</h3>
+                <H3>
+                    <span>Total</span>
+                    <img src="./images/totalsymbol.png" alt="" id="totalsymbol">
+                </H3>
                 <p>R$ 3.000,00</p>
             </div>
         </section>
 
         <section id="transaction">
-            <h2>Transaçoes</h2>
+            <h2 class="sr-only">Transaçoes</h2>
+
+            <a href="#" class="button new">+ Nova Transacao</a>
 
             <table id="data-table">
                 <thead>
@@ -46,22 +57,32 @@
                         <th>Descriçao</th>
                         <th>Valor</th>
                         <th>Data</th>
+                        <th></th>
                     </tr>
                 <tbody>
                     <tr>
                         <td class="description">Luz</td>
                         <td class="expense">- R$ 500,00</td>
                         <td class="date">26/01/2021</td>
+                        <td>
+                           <img class="x" src="./images/remove.jpg" alt="">
+                        </td>
                     </tr>
                     <tr>
                         <td class="description">Agua</td>
                         <td class="income">- R$ 80,00</td>
                         <td class="date">26/01/2021</td>
+                        <td>
+                            <img class="x" src="./images/remove.jpg" alt="">
+                        </td>
                     </tr>
                     <tr>
                         <td class="description">Internet</td>
                         <td class="expense">- R$ 150,00</td>
                         <td class="date">26/01/2021</td>
+                        <td> 
+                            <img class="x" src="./images/remove.jpg" alt="">
+                        </td>
                     </tr>
                 </tbody>
                 </thead>
