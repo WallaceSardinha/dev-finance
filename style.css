@@ -44,6 +44,17 @@ body {
 
 }
 
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #5a8d5a;
+}
+
+a:hover {
+    color: #1ba51b;
+
+}
+
 h2 {
     margin-top: 3.2rem;
     margin-bottom: 0.8rem;
@@ -54,7 +65,8 @@ h2 {
 
 header {
 
-    background: rgb(52, 117, 46);
+   background: rgb(52, 117, 46);
+    /*background-image: linear-gradient(rgb(52, 117, 46), rgb(221, 255, 231));*/
     padding: 2rem 0 10rem;
     text-align: center;
 
@@ -93,15 +105,17 @@ header {
 
 
 }
-
+/*
 a {
-    color: #3f963f;
     text-decoration: none;
+    color: #4e8b4e;
+    font-weight: 500;
 }
 
 a:hover {
-    color: #32c432;
+    color: #1ba51b;
 }
+*/
 
 .button.new {
     display: inline-block;
@@ -125,14 +139,6 @@ a:hover {
 }
 */
 
-
-.github {
-    width: 50px;
-    right: 700px;
-    top: 150px;
-
-}
-
 .card h3 {
     font-weight: normal;
     font-size: 1rem;
@@ -155,9 +161,9 @@ a:hover {
 }
 
 .card p {
-    font-size: 2rem;
+    width: 160px;
+    font-size: 25px;
     line-height: 2rem;
-    width: 100px;
 
     padding: .8rem;
 }
@@ -195,6 +201,10 @@ table tbody td {
     color: #6e7ba8;
     font-weight: 500;
 
+}
+
+table tbody td:hover {
+    font-weight: 700;
 }
 
 table tbody tr {
@@ -251,7 +261,12 @@ td.expense {
     opacity: 1;
 }
 
+.hidden {
+    display: none;
+}
+
 .modal-overlay {
+    
     width: 100%;
     height: 100%;
 
@@ -266,6 +281,7 @@ td.expense {
 
     opacity: 0;
     visibility: hidden;
+    z-index: 1;
 }
 
 .modal-overlay.active {
@@ -273,21 +289,61 @@ td.expense {
     visibility: visible;
 }
 
+
 .modal {
     display: grid;
-    background-color: #ececf3;
-    padding: 2.4rem;
-    border-radius: 3px;
+    background-color: #e0e6dd;
+    max-width: 400px;
+    width: 90%;
+    padding: 1.5rem;
+    border-radius: 8px;
+
 }
 
-.modal p {
+#form {
 
+max-width: 500px;
+
+}
+
+.input {
+border: none;
+border-radius: .3rem;
+width: 100%;
+}
+
+#date {
+    margin: 0;
+    }
+    
+
+.input-group {
+    margin-top: 0.8rem;
+}
+
+.input-group.actions {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-group.actions .button,
+.input-group.actions button {
+    width: 48%;
+    margin-top: .8rem;
+}
+
+
+.modal .help {
+
+    display: block;
     margin-top: 2px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     font-style: normal;
-    opacity: 80%;
+    opacity: 50%;
     
 }
 
@@ -301,41 +357,30 @@ h4 {
     margin-top: 15px;
 }
 
-.buttons {
-    display: block;
-    padding-top: 1rem;
-}
 
-button {
-
-    display: inline;
-    text-align: center;
-    padding: .5rem 1rem;
-    margin: 1rem;
-
-}
 
 #cancel {
-    margin-left: 62px;
-    background-color: #ffffff;
+    padding: .5rem 2.4rem;
     border-color: red;
-    border-radius: 1px;
+    border-radius: 2px;
+    border-style: solid;
     font-family: 'Open Sans', sans-serif;
     color: red;
     font-weight: 700;
     font-size: 15px;
-    opacity: 70%;
+    opacity: 60%;
+
 }
 
 #cancel:hover {
     scale: 1.1;
     opacity: 100%;
+    cursor: pointer;
 }
 
 #save {
     padding: .5rem 1.6rem;
     background-color: #1ba51b;
-    border-radius: 1px;
     border-style: solid;
     border-color: #1ba51b;
     border-radius: 2px;
@@ -344,6 +389,7 @@ button {
     font-weight: 700;
     font-size: 15px;
     opacity: 70%;
+    margin: 0;
     
 }
 
@@ -351,6 +397,7 @@ button {
     scale: 1.1;
     background-color: #35bb35;
     opacity: 100%;
+    cursor: pointer;
     
 }
 
@@ -361,16 +408,57 @@ input {
     margin-top: 15px;
     width: 350px;
 }
-
-footer {
-
-    text-align: center;
-    padding: 4rem 0 2rem;
-
+/*
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url(./images/cale1.png) no-repeat;
+    width: 5px;
+    height: 5px;
+    border-width: thin;
 }
+*/
 
 .background {
     position: relative;
+}
+
+footer {
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.github {
+
+    margin: 5px;
+    max-width: 25px;
+    opacity: 50%;
+
+}
+
+.github:hover {
+
+    opacity: 70%;
+}
+
+
+
+.linkedin {
+
+    margin: 5px;
+    max-width: 25px;
+    opacity: 50%;
+
+}
+
+.linkedin:hover {
+
+    opacity: 70%;
+
 }
 
 @media (min-width: 800px) {
@@ -382,6 +470,7 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr 30%;
         gap: 2rem;
+        margin-top: -90px;
 
     }
 
@@ -397,6 +486,44 @@ footer {
         border-spacing: 0 .5rem;
     }
 
+
+    .footer {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .github {
+
+        margin: 5px;
+        max-width: 25px;
+        display: flex;
+        opacity: 50%;
+    
+    }
+
+    .github:hover {
+
+        opacity: 70%;
+    }
+
+
+    
+    .linkedin {
+    
+        margin: 5px;
+        max-width: 25px;
+        display: flex;
+        opacity: 50%;
+    
+    }
+
+    .linkedin:hover {
+
+        opacity: 70%;
+
+    }
 
     /*
     .card p {

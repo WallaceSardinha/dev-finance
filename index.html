@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css" defer>
+    <script src="./main.js" defer></script>
 </head>
 
 <body>
@@ -19,10 +20,10 @@
     </header>
 
     <main class="container">
-        
+
         <section id="balance">
             <h2 class="sr-only">Balanço</h2>
-            
+
             <div class="card">
                 <H3>
                     <span>Entradas</span>
@@ -49,7 +50,7 @@
         <section id="transaction">
             <h2 class="sr-only">Transaçoes</h2>
 
-            <a href="#" class="button new">+ Nova Transacao</a>
+            <a href="#" class="btnModalOpen" onclick="Modal.open()">+ Nova Transacao</a>
 
             <table id="data-table">
                 <thead>
@@ -65,7 +66,7 @@
                         <td class="expense">- R$ 500,00</td>
                         <td class="date">26/01/2021</td>
                         <td>
-                           <img class="x" src="./images/remove.png" alt="">
+                            <img class="x" src="./images/remove.png" alt="">
                         </td>
                     </tr>
                     <tr>
@@ -80,7 +81,7 @@
                         <td class="description">Internet</td>
                         <td class="expense">- R$ 150,00</td>
                         <td class="date">26/01/2021</td>
-                        <td> 
+                        <td>
                             <img class="x" src="./images/remove.png" alt="">
                         </td>
                     </tr>
@@ -89,24 +90,59 @@
             </table>
         </section>
     </main>
-<div class="modal-overlay active">
-    <div class="modal">
-        <H4>Nova Transacao</H4>
-        <input type="text" class="descriptiont" placeholder="Descriçao">
-        <input type="number" placeholder="0,00">
-        <p>Use sinal - (negativo) para despesas e , (virgula) para casas decimais</p>
-        <input type="date">
-        <div class="buttons">
-            <button id="cancel">Cancelar</button>
-            <button id="save">Salvar</button>
+    <div class="modal-overlay" id="modalOpenS">
+        <div class="modal">
+            <div id="form"></div>
+            <H4>Nova Transacao</H4>
+            <form action="">
+                <div class="input-group">
+                    <label class="sr-only" for="description">Descricao</label>
+                    <input type="text" id="description" name="description" placeholder="descricao" />
+                </div>
+                <div class="input-group">
+                    <label class="sr-only" for="amount">Valor</label>
+                    <input type="number" step="0.01" id="amount" name="amount" placeholder="0,00" />
+                    <small class="help">Use "-" para despesas e "," para decimais.</small>
+                </div>
+                <div class="input-group">
+                    <label class="sr-only" for="date">Data</label>
+                    <input type="date" id="date" name="date" />
+                </div>
+                <div class="input-group actions">
+                    <a href="" id="cancel" onclick="Modal.close()">Cancelar</a>
+                    <button id="save">Salvar</button>
+                </div>
+
+            </form>
         </div>
 
-        </div>
     </div>
-</div>
-    <footer>
-        DEV-Finance$
+    </div>
+    </div>
+    <footer class="footer">
+        <a href="https://github.com/WallaceSardinha" target="_blank"><img class="github"
+            src="./images/github-logo.png"></a>
+    <a href="https://www.linkedin.com/in/wallace-s-silva" target="_blank"><img class="linkedin"
+            src="./images/linkedin-logo.png"></a>
     </footer>
+
+    <script>
+        Modal = {
+            open() {
+
+                document.querySelector('.modal-overlay')
+                    .classList.add('active')
+
+            },
+            close() {
+                document.querySelector('.modal-overlay')
+                    .classList.remove('active')
+
+            }
+
+        }
+    </script>
+
 </body>
 
 </html>
