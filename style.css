@@ -175,6 +175,7 @@ a:hover {
 
 
 #data-table {
+    display: inline-block;
     width: 100%;
     border-spacing: 0 .5rem;
     overflow-x: auto;
