@@ -124,6 +124,7 @@ a:hover {
 
 .card {
 
+    margin-top: 2.5rem;
     background: white;
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
