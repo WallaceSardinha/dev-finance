@@ -171,14 +171,20 @@ a:hover {
 
 #transaction {
 
+    display: block;
+
+    width: 100%;
+
+    overflow-x: auto;
+
 }
 
 
 #data-table {
-    display: inline-block;
+
     width: 100%;
     border-spacing: 0 .5rem;
-    overflow-x: auto;
+
 }
 
 table tbody td {
@@ -245,6 +251,93 @@ td.expense {
     opacity: 1;
 }
 
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.555);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    display: grid;
+    background-color: #ebebf5;
+    padding: 2.4rem;
+    border-radius: 3px;
+}
+
+.modal p {
+
+    margin-top: 2px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    opacity: 80%;
+    
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark-blue);
+    margin-top: 15px;
+}
+
+.buttons {
+    display: block;
+}
+
+button {
+
+    display: inline;
+    text-align: center;
+    padding: .5rem 1rem;
+    margin: 1rem;
+
+}
+
+#cancel {
+    margin-left: 67px;
+    background-color: #ffffff;
+    border-color: red;
+    border-radius: 2px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#save {
+    padding: .5rem 1.6rem;
+    background-color: #1ba51b;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#save:hover {
+    scale: 1.1;
+    background-color: #35bb35;
+    
+}
+
+input {
+    padding: .5rem;
+    margin-top: 15px;
+    width: 350px;
+}
+
 footer {
 
     text-align: center;
@@ -273,11 +366,10 @@ footer {
     }
 
     #data-table {
+
         display: inline-table;
         width: 100%;
         border-spacing: 0 .5rem;
-
-        overflow-x: auto;
     }
 
 
