@@ -45,13 +45,29 @@ body {
 }
 
 a {
+    display: flex;
     text-decoration: none;
     font-weight: 600;
     color: #5a8d5a;
+    /*justify-content: end;*/
+    margin-left: 7px;
 }
 
 a:hover {
     color: #1ba51b;
+
+}
+
+#addicon {
+    display: flex;
+    width: 19px;
+    margin-right: 5px;
+    opacity: 60%;
+}
+
+#addicon:hover {
+    opacity: 100%;
+    scale: 1.1;
 
 }
 
@@ -351,7 +367,7 @@ width: 100%;
 h4 {
     
     position: relative;
-    top: -30px;
+    top: -15px;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
     color: var(--dark-blue);
