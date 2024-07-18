@@ -95,9 +95,13 @@ const DOM = {
     },
     
     updateBalance() {
-        document.getElementById('incomeDisplay').innerHTML = Transaction.incomes()
-        document.getElementById('expenseDisplay').innerHTML = Transaction.expenses()
-        document.getElementById('totalDisplay').innerHTML = Transaction.total()
+        const incomeResult = Utils.formatCurrency(Transaction.incomes())
+        const expenseResult = Utils.formatCurrency(Transaction.expenses())
+        const totalResult = Utils.formatCurrency(Transaction.total())
+
+        document.getElementById('incomeDisplay').innerHTML = incomeResult
+        document.getElementById('expenseDisplay').innerHTML = expenseResult
+        document.getElementById('totalDisplay').innerHTML = totalResult
     }
 }
 
@@ -117,7 +121,7 @@ const Utils = {
 
         return signal + value
 
-    }
+    },
 }
 /*
 const remove = () {

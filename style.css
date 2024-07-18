@@ -186,7 +186,7 @@ a:hover {
 
 .card p {
     width: 160px;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 2rem;
 
     padding: .8rem;
@@ -501,7 +501,7 @@ footer {
 
     .card p {
         width: 160px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #data-table {
