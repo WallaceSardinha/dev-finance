@@ -59,16 +59,12 @@ const Transaction = {
         })
         return expense;
     },
-}
 
-/* remover chave amarela de cima
     total() {
-        expense() = Number(value)
-        income() =  Number(value)
-    return income - expense;
+        return "insertvalue";
     }
 }
-*/
+
 
 
 const DOM = {
