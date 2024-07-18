@@ -148,6 +148,13 @@ a:hover {
     color: var(--dark-blue);
 }
 
+.card:hover {
+
+    scale: 1.01;
+ 
+}
+
+
 /*
 #greenarrow {
     position: sticky;
@@ -309,7 +316,7 @@ td.expense {
 
 .modal {
     display: grid;
-    background-color: #e0e6dd;
+    background-color: #d5e7d5;
     max-width: 400px;
     width: 90%;
     padding: 1.5rem;
@@ -326,7 +333,7 @@ max-width: 500px;
 .input {
 border: none;
 border-radius: .3rem;
-width: 100%;
+width: 90%;
 }
 
 #date {
@@ -380,6 +387,7 @@ h4 {
     padding: .5rem 2.4rem;
     border-color: red;
     border-radius: 2px;
+    border: 2px;
     border-style: solid;
     font-family: 'Open Sans', sans-serif;
     color: red;
@@ -390,16 +398,16 @@ h4 {
 }
 
 #cancel:hover {
-    scale: 1.1;
+    scale: 1.05;
     opacity: 100%;
     cursor: pointer;
 }
 
 #save {
-    padding: .5rem 1.6rem;
+    padding: .6rem 1.6rem;
     background-color: #1ba51b;
     border-style: solid;
-    border-color: #1ba51b;
+    border: none;
     border-radius: 2px;
     font-family: 'Open Sans', sans-serif; 
     color: #ffffff;
@@ -411,7 +419,7 @@ h4 {
 }
 
 #save:hover {
-    scale: 1.1;
+    scale: 1.05;
     background-color: #35bb35;
     opacity: 100%;
     cursor: pointer;

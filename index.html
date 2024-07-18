@@ -29,26 +29,26 @@
                     <span>Entradas</span>
                     <img src="./images/downgreen.png" alt="" id="downgreen">
                 </H3>
-                <p>R$ 5.000,00</p>
+                <p id="incomeDisplay"></p>
             </div>
             <div class="card">
                 <H3>
                     <span>Saidas</span>
                     <img src="./images/upred.png" alt="" id="upred">
                 </H3>
-                <p>R$ 2.000,00</p>
+                <p id="expenseDisplay"></p>
             </div>
             <div class="card total">
                 <H3>
                     <span>Total</span>
                     <img src="./images/totalsymbol.png" alt="" id="totalsymbol">
                 </H3>
-                <p>R$ 3.000,00</p>
+                <p id="totalDisplay"></p>
             </div>
         </section>
 
         <section id="transaction">
-            <h2 class="sr-only">Transaçoes</h2>
+            <h2 class="sr-only"></h2>
 
             
             <a href="#" class="btnModalOpen" onclick="Modal.open()"><img src="./images/add.svg" id="addicon">Nova Transacao</a>
@@ -61,30 +61,6 @@
                         <th></th>
                     </tr>
                 <tbody>
-                    <tr>
-                        <td class="description">Luz</td>
-                        <td class="expense">- R$ 500,00</td>
-                        <td class="date">26/01/2021</td>
-                        <td>
-                            <img class="x" src="./images/remove.png" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Agua</td>
-                        <td class="income">- R$ 80,00</td>
-                        <td class="date">26/01/2021</td>
-                        <td>
-                            <img class="x" src="./images/remove.png" alt="">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="description">Internet</td>
-                        <td class="expense">- R$ 150,00</td>
-                        <td class="date">26/01/2021</td>
-                        <td>
-                            <img class="x" src="./images/remove.png" alt="">
-                        </td>
-                    </tr>
                 </tbody>
                 </thead>
             </table>
@@ -125,23 +101,6 @@
     <a href="https://www.linkedin.com/in/wallace-s-silva" target="_blank"><img class="linkedin"
             src="./images/linkedin-logo.png"></a>
     </footer>
-
-    <script>
-        Modal = {
-            open() {
-
-                document.querySelector('.modal-overlay')
-                    .classList.add('active')
-
-            },
-            close() {
-                document.querySelector('.modal-overlay')
-                    .classList.remove('active')
-
-            }
-
-        }
-    </script>
 
 </body>
 
