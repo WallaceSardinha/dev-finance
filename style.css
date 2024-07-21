@@ -14,9 +14,10 @@ html {
 
 body {
 
-    background-image: url(./images/money.png);
+    /*background-image: url(./images/money.png);*/
     background-repeat: repeat;
-    background-size: 500px;
+    background-size: 1000px;
+    background-blend-mode: hard-light;
     
     background-color: rgb(221, 255, 231);
     font-family: 'Open Sans', sans-serif
@@ -451,7 +452,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 footer {
 
-    margin-top: 20px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
 

@@ -36,7 +36,7 @@
                     <span>Saidas</span>
                     <img src="./images/upred.png" alt="" id="upred">
                 </H3>
-                <p id="expenseDisplay"></p>
+                <p id="expenseDisplay"><span></span></p>
             </div>
             <div class="card total">
                 <H3>
@@ -70,7 +70,7 @@
         <div class="modal">
             <div id="form"></div>
             <H4>Nova Transacao</H4>
-            <form action="">
+            <form action="" onsubmit="Form.submit(event)">
                 <div class="input-group">
                     <label class="sr-only" for="description">Descricao</label>
                     <input type="text" id="description" name="description" placeholder="descricao" />
