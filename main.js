@@ -13,9 +13,17 @@ Modal = {
 
 }
 
-const Transaction = {
+const Storage = {
+    get(){
+        return JSON.parse(localStorage.getItem('dev.finances:transactions')) || []
+    },
+    Set(transaction){
+        localStorage.setItem('dev.finances:transactions', JSON.stringify(transaction))
+    }
+}
 
-    all: [],
+const Transaction = {
+   all: Storage.get(),
 
     add(transaction){
         Transaction.all.push(transaction)
