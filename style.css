@@ -42,7 +42,7 @@ header {
 }
 
 #logoimg {
-    background-image:none
+    width: 350px;
 }
 
 .pages {
@@ -516,7 +516,7 @@ footer {
     }
 
     #logoimg {
-        background-image: none;
+
         width: 450px;
     }
 
