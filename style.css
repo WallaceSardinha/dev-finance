@@ -473,6 +473,7 @@ footer {
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    margin-bottom: 8px;
 
 }
 
@@ -535,6 +536,7 @@ footer {
 
         display: flex;
         justify-content: center;
+        margin-bottom: 8px;
 
     }
 
