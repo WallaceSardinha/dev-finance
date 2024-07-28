@@ -37,6 +37,25 @@ body {
     border-width: 0;
 }
 
+header {
+    margin: 0;
+}
+
+.pages {
+    position: flex-box;
+    display: flex;
+    justify-content: center;
+    place-content: center;
+    font-style: color white;
+}
+
+.pages .page {
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5px;
+}
+
 .container {
 
     width: min(90vw, 800px);
@@ -84,7 +103,7 @@ header {
 
    background: rgb(52, 117, 46);
     /*background-image: linear-gradient(rgb(52, 117, 46), rgb(221, 255, 231));*/
-    padding: 2rem 0 10rem;
+    padding: 2rem 0 8rem;
     text-align: center;
 
 }
@@ -141,7 +160,6 @@ a:hover {
 
 .card {
 
-    margin-top: 2.5rem;
     background: white;
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;

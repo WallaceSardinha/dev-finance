@@ -15,10 +15,10 @@ Modal = {
 
 const Storage = {
     get(){
-        return JSON.parse(localStorage.getItem('dev.finances:transactions')) || []
+        return JSON.parse(localStorage.getItem('dev.finances2:transactions')) || []
     },
     Set(transaction){
-        localStorage.setItem('dev.finances:transactions', JSON.stringify(transaction))
+        localStorage.setItem('dev.finances2:transactions', JSON.stringify(transaction))
     }
 }
 
