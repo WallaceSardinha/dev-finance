@@ -517,6 +517,7 @@ footer {
 
     #logoimg {
         background-image: none;
+        width: 450px;
     }
 
     #balance {
