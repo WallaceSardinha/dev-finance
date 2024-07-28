@@ -41,6 +41,10 @@ header {
     margin: 0;
 }
 
+#logoimg {
+    background-image:none
+}
+
 .pages {
     position: flex-box;
     display: flex;
@@ -509,6 +513,10 @@ footer {
 @media (min-width: 800px) {
     html {
         font-size: 87.5%;
+    }
+
+    #logoimg {
+        background-image: none;
     }
 
     #balance {
