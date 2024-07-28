@@ -169,6 +169,7 @@ a:hover {
     border-radius: 0.25rem;
     margin-bottom: 2rem;
     color: var(--dark-blue);
+    margin-top: 20px;
 }
 
 .card:hover {
