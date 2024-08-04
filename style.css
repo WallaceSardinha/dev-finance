@@ -459,11 +459,12 @@ input {
 }
 
 .checkboxes {
-    position: relative;
+
     display: flex;
-    align-items: center;
+    flex-wrap: nowrap;
+    align-items: baseline;
     justify-content: center;
-    max-width: 250px;
+    max-width: 150px;
 }
 /*
 input[type="date"]::-webkit-calendar-picker-indicator {
