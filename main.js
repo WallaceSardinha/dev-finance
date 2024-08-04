@@ -13,6 +13,16 @@ Modal = {
 
 }
 
+const name = {
+    name1: document.querySelector('#page1'),
+    name2: document.querySelector('#page2'),
+
+    
+
+
+}
+
+
 const Storage = {
     get(){
         return JSON.parse(localStorage.getItem('dev.finances:transactions')) || []
@@ -79,6 +89,7 @@ const DOM = {
         
         DOM.transactionsContainer.appendChild(tr)
     },
+
     innerHTMLTransaction(transaction, index) {
         const CSSclass = transaction.amount > 0 ? "income" : "expense"
         

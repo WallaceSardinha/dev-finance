@@ -457,6 +457,14 @@ input {
     margin-top: 15px;
     width: 350px;
 }
+
+.checkboxes {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+}
 /*
 input[type="date"]::-webkit-calendar-picker-indicator {
     color: rgba(0, 0, 0, 0);

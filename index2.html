@@ -18,8 +18,8 @@
     <header>
         <img src="./images/logoDEV.png" alt="" id="logoimg">
         <div class="pages">        
-            <a href="./index.html" class="page"><span>Page1</span></a>
-            <a href="./index2.html" class="page"><span>Page2</span></a>
+            <a href="./index.html" class="page" id="page1"><span>Página 1</span></a>
+            <a href="./index2.html" class="page" id="page2"><span>Página 2</span></a>
         </div>
 
     </header>
@@ -38,7 +38,7 @@
             </div>
             <div class="card">
                 <H3>
-                    <span>Saidas</span>
+                    <span>Saídas</span>
                     <img src="./images/upred.png" alt="" id="upred">
                 </H3>
                 <p id="expenseDisplay"><span></span></p>
@@ -56,11 +56,11 @@
             <h2 class="sr-only"></h2>
 
             
-            <a href="#" class="btnModalOpen" onclick="Modal.open()"><img src="./images/add.svg" id="addicon">Nova Transacao</a>
+            <a href="#" class="btnModalOpen" onclick="Modal.open()"><img src="./images/add.svg" id="addicon">Nova Transação</a>
             <table id="data-table">
                 <thead>
                     <tr>
-                        <th>Descriçao</th>
+                        <th>Descrição</th>
                         <th>Valor</th>
                         <th>Data</th>
                         <th></th>
@@ -74,10 +74,10 @@
     <div class="modal-overlay" id="modalOpenS">
         <div class="modal">
             <div id="form"></div>
-            <H4>Nova Transacao</H4>
+            <H4>Nova Transação</H4>
             <form action="" onsubmit="Form.submit(event)">
                 <div class="input-group">
-                    <label class="sr-only" for="description">Descricao</label>
+                    <label class="sr-only" for="description">Descrição</label>
                     <input type="text" id="description" name="description" placeholder="descricao" />
                 </div>
                 <div class="input-group">
